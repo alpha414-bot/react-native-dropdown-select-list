@@ -213,9 +213,9 @@ const SelectList: React.FC<SelectListProps> =  ({
                                                 <Text style={[{color:'#c4c5c6',fontFamily},disabledTextStyles]}>{value}</Text>
                                             </TouchableOpacity>
                                         )
-                                    }else if(key==="isAButton"){
+                                    }else if(key=="isAButton"){
                                         return (
-                                            <TouchableOpacity style={{backgroundColor:'gray', paddingHorizontal:10, paddingVertical:6, borderRadius:7, marginHorizontal:5, marginBottom:7}} activeOpacity={0.8} onPress={onPressButton}>
+                                            <TouchableOpacity style={{backgroundColor:'gray', paddingHorizontal:10, paddingVertical:6, borderRadius:7, marginHorizontal:5, marginBottom:7}} activeOpacity={0.8} onPress={onPressButton} key={index}>
                                                 <Text style={[{color:'white'}, {fontFamily}]}>{buttonText}</Text>
                                             </TouchableOpacity>
                                         )
